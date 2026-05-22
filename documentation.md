@@ -52,10 +52,10 @@ xarray Datasets, each corresponding to a scan group within the observation.
 
 | File | Approx. compressed size | Description |
 |---|---|---|
-| `ms1_primary.zarr` | ~50 GB | Primary calibrator scans |
-| `ms1_target.zarr` | ~530 GB | First set of target-field scans |
-| `ms2_target.zarr` | ~530 GB | Second set of target-field scans |
-| **Total** | **~1.1 TB** | (~3 TB uncompressed) |
+| `ms1_primary.zarr` | ~277.5 GB | Primary calibrator scans |
+| `ms1_target.zarr` | ~1.3 TB | First set of target-field scans |
+| `ms2_target.zarr` | ~1.3 GB | Second set of target-field scans |
+| **Total** | **~2.8 TB** |  |
 
 ---
 
@@ -117,7 +117,7 @@ group and exposes the following data variables and coordinates:
 | Dimension | Size | Description |
 |---|---|---|
 | `row` | varies per scan | One row per (baseline, time) sample |
-| `chan` | 1024 | Frequency channel index |
+| `chan` | 4096 | Frequency channel index |
 | `corr` | 4 | Polarisation correlation index (XX, XY, YX, YY) |
 
 ### Dataset-level attributes
